@@ -69,10 +69,7 @@
         NSString *stringToCheck = @"license.";
         stringToCheck = [NSString stringWithFormat: @"%@%@", stringToCheck, countryCode.lowercaseString];
 
-        if([flowSteps containsObject: stringToCheck]) {
-            [configBuilder withDocumentStepOfType:ONDocumentTypeDrivingLicence andCountryCode:countryCode];
-            addedDoc = true;
-        }
+
     }
 
     if(variantError != NULL)
